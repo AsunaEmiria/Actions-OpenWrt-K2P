@@ -14,6 +14,12 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
+echo 'src-git packages https://github.com/padavanonly/packages.git' >>feeds.conf.default
+echo 'src-git luci https://github.com/padavanonly/luci.git' >>feeds.conf.default
+echo 'src-git routing https://github.com/openwrt/routing.git' >>feeds.conf.default
+echo 'src-git telephony https://github.com/openwrt/telephony.git' >>feeds.conf.default
 echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
 echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
-git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
+
+
+
